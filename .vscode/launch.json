@@ -1,0 +1,32 @@
+// {
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Python File",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "${file}"
+//         }
+//     ]
+// }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Toga: ash2.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/ash2.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "stopOnEntry": true,
+            "debugOptions": [
+                "RedirectOutput"
+            ],
+            "env": {
+                "TOGA_DEBUG_LAYOUT": "1",
+                "PYTHONUNBUFFERED": "1"
+            }
+        }
+    ]
+}
